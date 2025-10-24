@@ -130,7 +130,7 @@ if (!$(e.target).closest($email, $hints).lenght){
       $('#addressInvalid').hide();
     }
 
-    // виводим усе в консоль якщо все правильно
+    // виводим усе в консоль і зберігаємо в localStore якщо все правильно
     if (valid) {
       const formData ={
         firstname,
@@ -140,8 +140,8 @@ if (!$(e.target).closest($email, $hints).lenght){
         city,
         zipcode,
         address,
-      }
-      localStorage.setItem('userData', JSON.stringify(formData))
+      };
+      localStorage.setItem('userData', JSON.stringify(formData));
       console.log('Дані користувача', formData);
     }
   });
